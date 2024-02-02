@@ -1,0 +1,205 @@
+#contacto{
+    background-image: url(https://res.cloudinary.com/dsdicaf5h/image/upload/v1679581045/ici/mesh-145_wth0ww.png);
+    background-size: cover;
+    width: 100%;
+    padding: 15% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #card{
+        width: auto;
+    }
+    #iframe{
+        display: flex;
+        padding: 1%;
+        font-size: 100px;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0%;
+        height: 500px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        background-color: #e8e8e8;
+        box-shadow: 6px 6px 12px #0000007b,
+                    -6px -6px 12px #0000007b;
+        font-weight: bold;
+        iframe{
+            border-radius: 15px;
+            width: 100%;
+            font-size: 100px;
+            height: 100%;
+        }
+    }
+}
+
+#divAnglia{
+    display: flex;
+    flex-direction: row-reverse;
+    .imgAnglia{
+        width: 170px;
+        height: 170px; 
+    }
+    #card2{
+        flex: 1; 
+        width: auto;
+        height: 170px; 
+    }
+}
+
+#whatsapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 12px #00000043,
+                -6px -6px 12px #00000043;
+    font-size: 4rem;
+    margin-top: 10px;
+    padding: 1%;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+    h2{
+        font-size: 0.8em;
+    }
+    .whatsapp {
+        position:relative;
+        width:95px;
+        height:95px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:70px;
+        text-align:center;
+        font-size:70px;
+        box-shadow: inset 0 0 10px #00000088;
+        z-index:100;
+        margin-left: 10px;
+        .whatsapp-icon {
+            margin-top:10px;
+            color: white;
+        }
+    }
+}
+
+.whatsapp:hover{
+background-color: #125129;
+}
+
+
+
+@media screen and (max-width:1024px){
+    #whatsapp{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #contacto{
+        #iframe{
+            padding: 0%;
+            margin: 15% 0%;
+            width: 100%;
+            height: 400px;
+            font-size: 14px;
+            border-radius: 15px;
+            iframe{
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    #whatsapp{
+        border-radius: 10px;
+        font-size: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+        .whatsapp {
+            width:80px;
+            height:80px;
+            border-radius:55px;
+            font-size:55px;
+            .whatsapp-icon {
+                margin-top:10px;
+            }
+        }
+    }
+    #divAnglia{
+        .imgAnglia{
+            width: 150px;
+            height: 150px; 
+        }
+        #card2{
+            flex: 1; 
+            width: auto;
+            height: 150px; 
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    #whatsapp{
+        .whatsapp {
+            width:60px;
+            height:60px;
+            border-radius:40px;
+            font-size:40px;
+            .whatsapp-icon {
+                margin-top:9px;
+            }
+        }
+    }
+    #divAnglia{
+        .imgAnglia{
+            width: 130px;
+            height: 130px; 
+        }
+        #card2{
+            flex: 1; 
+            width: auto;
+            height: 130px; 
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    #divAnglia{
+        .imgAnglia{
+            width: 100px;
+            height: 100px; 
+        }
+        #card2{
+            flex: 1; 
+            width: auto;
+            height: 100px; 
+        }
+    }
+    #card{
+        div{
+            padding:10px;
+        }
+    }
+}
+
+@media screen and (max-width:300px){
+    #whatsapp{
+        h2{
+            font-size: 0.6em;
+        }
+    }
+    #divAnglia{
+        flex-direction: column;
+        align-items: center;
+        .imgAnglia{
+            width: 100px;
+            height: 100px; 
+        }
+        #card2{
+            flex: 1; 
+            width: auto;
+            height: 100px; 
+        }
+    }
+}

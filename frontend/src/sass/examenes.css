@@ -1,0 +1,89 @@
+.exams {
+  background-image: url(https://res.cloudinary.com/dsdicaf5h/image/upload/v1679581045/ici/mesh-145_wth0ww.png);
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.exams .headExams {
+  margin-bottom: 5%;
+}
+.exams .headExams img {
+  display: block;
+}
+.exams .headExams h1 {
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4.5em;
+  border-radius: 5px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.446);
+}
+.exams .cardsExams .cardExams {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.exams .cardsExams .cardExams .cardFooterLvls {
+  width: 100%;
+}
+.exams .cardsExams .cardExams .btn {
+  width: 25% !important;
+  box-shadow: 0px 6px 0px #000262;
+  border: none !important;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.exams .cardsExams .cardExams .card-body .card-title h3 {
+  font-size: 2em;
+}
+.exams .cardsExams .cardExams .card-body h5 {
+  font-size: 1.5em;
+}
+.exams .cardsExams .expanded-card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.exams .cardsExams .collapsed-card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.exams .cardsExamsLevels .cardExamsLevels {
+  background-color: #000289;
+  width: 70%;
+  box-shadow: 0px 6px 0px #000262;
+  border: none !important;
+}
+.exams .cardsExamsLevels .cardExamsLevels .btnLvls {
+  margin-bottom: 0px;
+  width: 100% !important;
+}
+.exams .cardsExamsLevels .cardExamsLevels .btnLvls .card-body {
+  border-bottom: 10px white;
+}
+.exams .cardsExamsLevels .cardExamsLevels .btnLvls .card-body .card-title h3 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .examsCard {
+    width: auto;
+  }
+  .exams .cardsExams {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .exams .cardsExams .cardExams {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .exams .cardsExams .cardExams .btn {
+    width: auto !important;
+  }
+  .exams .cardsExams .cardExams .card-body .card-title h3 {
+    font-size: 1.8em;
+  }
+  .exams .cardsExams .cardExams .card-body h5 {
+    font-size: 1.5em;
+  }
+  .exams .cardsExamsLevels .cardExamsLevels {
+    width: 100%;
+  }
+}/*# sourceMappingURL=examenes.css.map */

@@ -1,0 +1,33 @@
+.mas-background {
+  background-color: #ffffff;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 20px 20px, linear-gradient(rgba(0, 2, 137, 0.4078431373) 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, rgba(0, 2, 137, 0.4078431373) 1.6px, #ffffff 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+}
+
+.mod-header {
+  border-bottom: solid 4px #000289;
+  font-size: 2em;
+}
+
+.mod-footer {
+  border-top: solid 4px #000289;
+}
+
+@media screen and (max-width: 992px) {
+  .login {
+    padding: 10% 0%;
+  }
+  .login div {
+    margin: 0%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .login {
+    padding: 20% 0%;
+  }
+  .login div {
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=login.css.map */

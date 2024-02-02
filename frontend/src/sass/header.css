@@ -1,0 +1,322 @@
+#header {
+  background-color: #ffffff;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 20px 20px, linear-gradient(rgba(0, 2, 137, 0.4078431373) 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, rgba(0, 2, 137, 0.4078431373) 1.6px, #ffffff 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+  z-index: 9999;
+  box-shadow: inset 0 40px 100px #ffffff;
+  text-align: center;
+}
+#header h1 {
+  color: #000289;
+  font-size: 2em;
+  font-weight: bolder;
+}
+#header header .header-img-div {
+  width: 16%;
+  margin-bottom: 1%;
+}
+#header header .header-img-div .imgdiv img {
+  width: 100%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.604);
+  border-radius: 1%;
+}
+
+.btn:hover {
+  background-color: #000289;
+}
+
+.div-nav-link {
+  background-color: #000289 !important;
+  border-radius: 5px;
+  box-shadow: 0px 6px 0px #000262;
+  transition: all 0.1s;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1 !important;
+  border-color: #000289 !important;
+}
+.div-nav-link .nav-link {
+  color: white;
+}
+
+.div-nav-link:active {
+  box-shadow: 0px 0px 0px white;
+  position: relative;
+  top: 6px;
+}
+
+#dropDownBtn:active {
+  box-shadow: 0px 0px 0px white;
+  position: relative;
+  top: 6px;
+}
+
+.borderHeader {
+  background-color: #000289;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+}
+
+.menuMovileDiv {
+  transform: perspective(200px) rotateX(15deg);
+  position: relative;
+  bottom: 5px;
+  z-index: 999;
+}
+.menuMovileDiv .menuMovile {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  background-color: #000289;
+  font-size: 2em;
+  z-index: 999;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+}
+
+.menuMovileDiv:active {
+  transform: perspective(170px) rotateX(25deg);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+
+.menuContainer .dropDownItems {
+  font-size: 1.4em;
+  text-align: center;
+  color: #000289;
+}
+
+#root {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.activeSideBarRoot {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+#sideBar {
+  position: fixed;
+  left: -1px;
+  top: 0;
+  width: auto;
+  height: 100%;
+  z-index: 900;
+  overflow-x: hidden !important;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 0 10px black;
+  font-size: 15px;
+}
+@media screen and (max-width: 992px) {
+  #sideBar {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sideBar {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #sideBar {
+    font-size: 10px;
+  }
+}
+#sideBar .sideBarDiv {
+  width: 50vw;
+  height: 100%;
+}
+#sideBar .sideBarDiv .exitButton {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  width: 50px;
+  height: auto;
+}
+#sideBar .sideBarDiv .exitButton svg {
+  width: 100%;
+  height: 100%;
+  color: #000289;
+}
+#sideBar .sideBarDiv .menuSpan {
+  font-size: 25px;
+  font-weight: 800;
+  color: #000289;
+}
+#sideBar .sideBarDiv hr {
+  color: #000289;
+  border-top: 5px #000289 solid;
+  width: 100%;
+}
+#sideBar .nav .div-nav-link .nav-link {
+  font-size: 1em;
+}
+
+.activeSideBar {
+  transform: translate3d(50vw, 0px, 0px) !important;
+  overflow: hidden !important;
+}
+
+#index {
+  overflow: hidden;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeHeader {
+  opacity: 1 !important;
+}
+
+.hide {
+  transition: opacity 5s ease-in-out;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  #header .fadeHeader .text-end {
+    width: 8%;
+  }
+}
+@media screen and (max-width: 1266px) {
+  #header header .header-img-div {
+    width: 22%;
+  }
+  #header .fadeHeader .text-end {
+    width: 10%;
+  }
+  #header .imgdiv img {
+    width: 100%;
+  }
+}
+.btn {
+  width: auto;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #header .fadeHeader .text-end {
+    width: 12%;
+  }
+  #header .border-header-user {
+    margin-top: 10%;
+  }
+  #header .borderHeader {
+    margin-top: 5%;
+  }
+  #header header .header-img-div {
+    width: 30%;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #header .fadeHeader .text-end {
+    width: 15%;
+  }
+  #header header .header-img-div {
+    width: 40%;
+    margin-bottom: 1%;
+  }
+  #header .borderHeader {
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #header .fadeHeader .text-end {
+    width: 19%;
+  }
+  #header header .header-img-div {
+    width: 55%;
+    margin-bottom: 1%;
+  }
+  #header .borderHeader {
+    margin-top: 7%;
+  }
+  .activeSideBar {
+    transform: translate3d(70vw, 0px, 0px) !important;
+  }
+  #sideBar .sideBarDiv {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  #header .fadeHeader .text-end {
+    width: 22%;
+  }
+  #header header .header-img-div {
+    width: 65%;
+    margin-bottom: 1%;
+  }
+  #header .borderHeader {
+    margin-top: 10%;
+  }
+  .activeSideBar {
+    transform: translate3d(75vw, 0px, 0px) !important;
+    overflow: hidden !important;
+  }
+  #sideBar .sideBarDiv {
+    width: 75vw;
+  }
+  #sideBar .sideBarDiv .nav .div-nav-link {
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  #header .fadeHeader .text-end {
+    width: 25%;
+  }
+  #header .borderHeader {
+    margin-top: 12%;
+  }
+  #header header .header-img-div {
+    width: 75%;
+    margin-bottom: 1%;
+  }
+  .activeSideBar {
+    transform: translate3d(90vw, 0px, 0px) !important;
+    overflow: hidden !important;
+  }
+  #sideBar .sideBarDiv {
+    width: 90vw;
+  }
+  #sideBar .sideBarDiv .nav .div-nav-link {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+@media screen and (max-width: 280px) {
+  .activeSideBar {
+    transform: translate3d(99vw, 0px, 0px) !important;
+  }
+  #sideBar .sideBarDiv {
+    width: 99vw;
+  }
+  #header header .header-img-div {
+    width: 90%;
+    margin-bottom: 1%;
+  }
+  #header .borderHeader {
+    margin-top: 15%;
+  }
+}/*# sourceMappingURL=header.css.map */

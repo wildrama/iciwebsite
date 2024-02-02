@@ -1,0 +1,267 @@
+
+#inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/dsdicaf5h/image/upload/v1679581045/ici/mesh-145_wth0ww.png);
+    background-size: cover;
+    background-color: #000289;
+    font-family: 'Exo', sans-serif;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.6em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="password"] {
+    width: 100%;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #c5c5c5cb;
+    font-weight: bold;
+}
+
+.btn2 {
+    padding: 1.8% 2% ;
+    font-size: 3em;
+    border: none !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    background-color: #000289 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.2s ease-in-out !important;
+    cursor: pointer !important
+}
+
+.btn3{
+    padding: 1.8% 2%  ;
+    font-size: 1.5em;
+    border: none !important;
+    width: auto !important;
+    border-radius: 4px !important;
+    background-color: #000289 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.2s ease-in-out !important;
+    cursor: pointer !important
+}
+
+.btn4{
+    padding: 1.8% 2%  ;
+    border: none !important;
+    width: auto !important;
+    border-radius: 4px !important;
+    background-color: #000289 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.2s ease-in-out !important;
+    cursor: pointer !important
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+.form-control{
+    font-size: 2em;
+}
+
+.wrapper {
+    display: inline-flex;
+    background-color: #e8e8e8;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5cb;
+}
+
+.wrapper .option {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #000289;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked ~ .option.option-1,
+#option-2:checked ~ .option.option-2,
+#option-3:checked ~ .option.option-3,
+#option-4:checked ~ .option.option-4 {
+    border-color: #000289;
+    background: #000289;
+}
+
+
+#option-1:checked ~ .option.option-1 .dot,
+#option-2:checked ~ .option.option-2 .dot,
+#option-3:checked ~ .option.option-3 .dot,
+#option-4:checked ~ .option.option-4 .dot {
+    background: #fff;
+}
+
+#option-1:checked ~ .option.option-1 .dot::before,
+#option-2:checked ~ .option.option-2 .dot::before,
+#option-3:checked ~ .option.option-3 .dot::before,
+#option-4:checked ~ .option.option-4 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 1.4em;
+    color: #808080;
+}
+
+#option-1:checked ~ .option.option-1 span,
+#option-2:checked ~ .option.option-2 span,
+#option-3:checked ~ .option.option-3 span,
+#option-4:checked ~ .option.option-4 span {
+    color: #fff;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 5px;
+}
+
+.text-header{
+    color: white;
+    font-size: 3em;
+}
+
+.transferencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5cb;
+}
+
+.card-header {
+    background-color: #000289;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 6px 6px 12px #00000042,
+                -6px -6px 12px #00000042;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1224px){
+    #inputs{
+        padding: 12% 0%;
+    }
+}
+@media screen and (max-width: 767px){
+    #inputs{
+        padding: 100px 0px;
+    }
+}
+@media screen and (max-width: 580px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0% 2%;
+        height: auto;
+    }
+    .wrapper .option{
+        padding: 3% 0%;
+    }
+    .transferencia{
+        h1{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        .form-control{
+            font-size: 15px;
+        }
+    }
+    .form-group input[type="tel"],
+    .form-group input[type="date"],
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="number"],
+    .form-group input[type="password"] {
+        padding: 14px;
+    }
+}
+@media screen and (max-width: 407px){
+    #inputs{
+        .card{
+            width: 100vw;
+        }
+    }
+}
